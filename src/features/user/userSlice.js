@@ -68,8 +68,7 @@ const userSlice = createSlice({
     [getRegisterUser.rejected]: (state, { payload }) => {
       state.isLoading = false
     },
-  },
-  // eslint-disable-next-line
+  }, // eslint-disable-next-line
   extraReducers: {
     [getLoginUser.pending]: (state) => {
       state.isLoading = true
