@@ -69,6 +69,7 @@ const userSlice = createSlice({
       state.isLoading = false
     },
   },
+  // eslint-disable-next-line
   extraReducers: {
     [getLoginUser.pending]: (state) => {
       state.isLoading = true
